@@ -1,5 +1,5 @@
 ---
-abstract: 'Edit a document via an $EDITOR'
+abstract: 'Edit a document via $EDITOR'
 author:
   - 'Robert Krimen <robertkrimen@gmail.com>'
 build_requires:
@@ -18,4 +18,4 @@ requires:
   File::Temp: 0
   Text::Clip: 0
   Try::Tiny: 0
-version: 0.0010
+version: 0.0011

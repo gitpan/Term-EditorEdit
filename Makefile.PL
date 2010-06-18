@@ -21,9 +21,9 @@ my %WriteMakefileArgs = (
                        'BUILD_REQUIRES' => {
                                              'Test::Most' => '0'
                                            },
-                       'ABSTRACT' => 'Edit a document via an $EDITOR',
+                       'ABSTRACT' => 'Edit a document via $EDITOR',
                        'EXE_FILES' => [],
-                       'VERSION' => '0.0010',
+                       'VERSION' => '0.0011',
                        'PREREQ_PM' => {
                                         'Try::Tiny' => '0',
                                         'Any::Moose' => '0',
