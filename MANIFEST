@@ -6,3 +6,4 @@ README
 lib/Term/EditorEdit.pm
 lib/Term/EditorEdit/Edit.pm
 t/01-basic.t
+t/02-edit-read.t

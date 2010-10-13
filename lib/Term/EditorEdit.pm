@@ -1,6 +1,6 @@
 package Term::EditorEdit;
 BEGIN {
-  $Term::EditorEdit::VERSION = '0.0011';
+  $Term::EditorEdit::VERSION = '0.0012';
 }
 # ABSTRACT: Edit a document via $EDITOR
 
@@ -72,7 +72,7 @@ Term::EditorEdit - Edit a document via $EDITOR
 
 =head1 VERSION
 
-version 0.0011
+version 0.0012
 
 =head1 SYNOPSIS
 
@@ -145,7 +145,7 @@ L<Term::CallEditor>
 
 =head1 AUTHOR
 
-  Robert Krimen <robertkrimen@gmail.com>
+Robert Krimen <robertkrimen@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
