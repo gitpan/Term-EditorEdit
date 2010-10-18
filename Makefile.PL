@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     'Text::Clip' => '0',
     'Try::Tiny' => '0'
   },
-  'VERSION' => '0.0013',
+  'VERSION' => '0.0014',
   'test' => {
     'TESTS' => 't/*.t'
   }

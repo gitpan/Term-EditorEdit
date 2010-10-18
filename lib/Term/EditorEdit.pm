@@ -1,6 +1,6 @@
 package Term::EditorEdit;
 BEGIN {
-  $Term::EditorEdit::VERSION = '0.0013';
+  $Term::EditorEdit::VERSION = '0.0014';
 }
 # ABSTRACT: Edit a document via $EDITOR
 
@@ -47,11 +47,12 @@ sub edit {
     my $document = delete $given{document};
     $document = '' unless defined $document;
 
-    my $tmp = $self->tmp;
+    my $file = delete $given{file};
+    $file = $self->tmp unless defined $file;
 
     my $edit = Term::EditorEdit::Edit->new(
         editor => $self,
-        tmp => $tmp,
+        file => $file,
         document => $document,
         %given, # process, split, ...
     ); 
@@ -72,7 +73,7 @@ Term::EditorEdit - Edit a document via $EDITOR
 
 =head1 VERSION
 
-version 0.0013
+version 0.0014
 
 =head1 SYNOPSIS
 
