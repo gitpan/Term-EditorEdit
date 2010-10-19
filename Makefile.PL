@@ -18,7 +18,9 @@ my %WriteMakefileArgs = (
     'ExtUtils::MakeMaker' => '6.31'
   },
   'DISTNAME' => 'Term-EditorEdit',
-  'EXE_FILES' => [],
+  'EXE_FILES' => [
+    'bin/editor-edit'
+  ],
   'LICENSE' => 'perl',
   'NAME' => 'Term::EditorEdit',
   'PREREQ_PM' => {
@@ -28,7 +30,7 @@ my %WriteMakefileArgs = (
     'Text::Clip' => '0',
     'Try::Tiny' => '0'
   },
-  'VERSION' => '0.0014',
+  'VERSION' => '0.0015',
   'test' => {
     'TESTS' => 't/*.t'
   }

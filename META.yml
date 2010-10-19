@@ -19,4 +19,4 @@ requires:
   IO::File: 0
   Text::Clip: 0
   Try::Tiny: 0
-version: 0.0014
+version: 0.0015
