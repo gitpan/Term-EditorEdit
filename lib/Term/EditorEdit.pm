@@ -1,6 +1,6 @@
 package Term::EditorEdit;
 BEGIN {
-  $Term::EditorEdit::VERSION = '0.0015';
+  $Term::EditorEdit::VERSION = '0.0016';
 }
 # ABSTRACT: Edit a document via $EDITOR
 
@@ -27,7 +27,7 @@ sub __singleton__ {
 sub edit_file {
     my $self = shift;
     my $file = shift;
-    die "Missing editor" unless my $editor = $self->EDITOR;
+    die "*** Missing editor (No \$VISUAL or \$EDITOR)\n" unless my $editor = $self->EDITOR;
     my $rc = system $editor, $file;
     unless ( $rc == 0 ) {
         my ($exit_value, $signal, $core_dump);
@@ -73,7 +73,7 @@ Term::EditorEdit - Edit a document via $EDITOR
 
 =head1 VERSION
 
-version 0.0015
+version 0.0016
 
 =head1 SYNOPSIS
 
@@ -150,7 +150,7 @@ Robert Krimen <robertkrimen@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Robert Krimen.
+This software is copyright (c) 2011 by Robert Krimen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
